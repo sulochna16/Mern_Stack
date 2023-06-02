@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 20px;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap:5px ;
+            background-color: #fff;
+            color: #444;
+        }
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .b {
+            
+            grid-column: 2/2;
+            grid-row: 2/2;
+
+        }
+        .d {
+            grid-column: 2/3;
+            grid-row: 2/2;
+
+        } 
+        
+        .e {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box b">B</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+    </div>
+</body>
+</html>
