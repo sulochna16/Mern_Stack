@@ -1,0 +1,62 @@
+<!-- "Flexible Layout Design: Navigating Content with Harmony" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0px;
+}
+.A{
+    background-color: rgb(215, 176, 22);
+    flex: 1;
+}
+.B{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+
+}
+.C{
+    flex: 4;
+    
+}
+   
+
+.aside{
+    display: flex;
+    flex-direction: row;
+}
+.aside article{
+    min-height: 60vh;
+}
+.aside aside{
+    background: beige;
+    flex: 1;
+}
+header,footer{
+    background: rgb(109, 35, 4);
+    min-height: 20vh;
+}
+    </style>
+  
+</head>
+<body>
+    <nav class="A">Nav</nav>
+  <div class="B">
+  	<header>Header</header>
+    <div class="aside">
+        <div class="C">
+    <article>Article</article>
+    <footer>Footer</footer>
+</div> 
+<aside>Aside</aside>
+</div>
+</div> 	 
+</body>
+</html>
